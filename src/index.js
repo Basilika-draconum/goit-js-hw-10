@@ -23,6 +23,7 @@ function onInputSearch(e) {
     refs.countryList.innerHTML = '';
     fetchCountries(name);
   } else {
+    refs.countryList.innerHTML = '';
     return;
   }
 
