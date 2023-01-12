@@ -21,9 +21,11 @@ function onInputSearch(e) {
 
   if (name.length > 0 && name.trim() !== '') {
     refs.countryList.innerHTML = '';
+    refs.countryInfo.innerHTML = '';
     fetchCountries(name);
   } else {
     refs.countryList.innerHTML = '';
+    refs.countryInfo.innerHTML = '';
     return;
   }
 
